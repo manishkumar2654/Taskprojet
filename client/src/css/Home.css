@@ -1,0 +1,105 @@
+/* Container Styling */
+.home-form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Title */
+.home-form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1c1c1c;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Form Layout */
+.home-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label + Input Group */
+.home-form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.home-form-group input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.home-form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button Styling */
+.home-login-btn {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-login-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .home-form-container {
+    margin: 50px 20px;
+    padding: 25px;
+  }
+
+  .home-form-title {
+    font-size: 22px;
+  }
+
+  .home-login-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-form-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .home-form-title {
+    font-size: 20px;
+  }
+
+  .home-form-group input {
+    font-size: 15px;
+  }
+
+  .home-login-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

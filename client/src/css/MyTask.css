@@ -1,0 +1,93 @@
+/* Container */
+.mytask-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Heading */
+.mytask-heading {
+  text-align: center;
+  color: #004080;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Table */
+.mytask-table-wrapper {
+  overflow-x: auto;
+}
+
+.mytask-table {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mytask-table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.mytask-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+}
+
+/* Button Styling */
+.task-btn {
+  background-color: #007bff;
+  border: none;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.task-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.task-btn.submitted {
+  background-color: green !important;
+  cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mytask-heading {
+    font-size: 22px;
+  }
+
+  .task-btn {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mytask-container {
+    padding: 10px;
+  }
+
+  .mytask-heading {
+    font-size: 20px;
+  }
+
+  .task-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .mytask-table th,
+  .mytask-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

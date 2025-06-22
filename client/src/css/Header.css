@@ -1,0 +1,139 @@
+/* Reset default box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #004080, #0066cc);
+  padding: 20px 30px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+/* Logo or Title */
+.header-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* User Icon */
+.header-user-icon {
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.header-user-icon:hover {
+  transform: scale(1.15);
+  color: #ffcc00;
+}
+
+/* Login Modal Form */
+.login-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Group each form field */
+.login-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.login-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Input Fields */
+.login-input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.login-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+  background: linear-gradient(90deg, #0056b3, #003f7f);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .header-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .header-user-icon {
+    align-self: flex-end;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 20px;
+  }
+
+  .login-modal-form {
+    padding: 15px;
+  }
+
+  .login-input, .login-button {
+    font-size: 15px;
+  }
+}

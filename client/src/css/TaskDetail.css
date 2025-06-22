@@ -1,0 +1,97 @@
+.task-detail-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.task-detail-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.task-table-wrapper {
+  overflow-x: auto;
+}
+
+.task-detail-table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.task-detail-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+}
+
+.status-icon {
+  border-radius: 50%;
+}
+
+.task-action-btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+
+.task-delete-cell {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.task-delete-cell:hover {
+  color: darkred;
+}
+
+.task-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .task-detail-heading {
+    font-size: 22px;
+  }
+
+  .task-action-btn {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  .task-detail-table th,
+  .task-detail-table td {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-detail-heading {
+    font-size: 20px;
+  }
+
+  .task-detail-container {
+    padding: 10px;
+  }
+
+  .task-detail-table {
+    font-size: 12px;
+  }
+
+  .task-delete-cell {
+    font-size: 12px;
+  }
+
+  .task-action-btn {
+    padding: 5px;
+    font-size: 12px;
+  }
+}

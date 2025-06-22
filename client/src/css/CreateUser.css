@@ -1,0 +1,87 @@
+/* Container Styling */
+.create-user-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.create-user-heading {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #004080;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.create-user-form .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.create-user-form .form-control,
+.create-user-form .form-select {
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.create-user-form .form-control:focus,
+.create-user-form .form-select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.create-user-btn {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.create-user-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .create-user-container {
+    margin: 30px 20px;
+    padding: 15px;
+  }
+
+  .create-user-heading {
+    font-size: 22px;
+  }
+
+  .create-user-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-user-heading {
+    font-size: 20px;
+  }
+
+  .create-user-form .form-control,
+  .create-user-form .form-select {
+    font-size: 14px;
+  }
+
+  .create-user-btn {
+    font-size: 14px;
+  }
+}

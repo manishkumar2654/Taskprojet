@@ -1,0 +1,77 @@
+.user-dashboard-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+}
+
+/* Header */
+.user-dashboard-header {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Welcome Message */
+.user-dashboard-welcome {
+  text-align: right;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.user-dashboard-logout {
+  color: #d9534f;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.user-dashboard-logout:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+.user-dashboard-navbar {
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+.user-dashboard-main {
+  min-height: 300px;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-dashboard-header h1 {
+    font-size: 22px;
+  }
+
+  .user-dashboard-welcome {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .user-dashboard-main {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-dashboard-header h1 {
+    font-size: 20px;
+  }
+
+  .user-dashboard-welcome p {
+    font-size: 14px;
+  }
+
+  .user-dashboard-main {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

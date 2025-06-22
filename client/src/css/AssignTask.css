@@ -1,0 +1,118 @@
+/* Container */
+.assign-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.assign-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.assign-table {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.assign-table th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.assign-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Button */
+.assign-btn {
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.assign-btn:hover {
+  background-color: #0056b3 !important;
+  color: white !important;
+}
+
+/* Modal Title */
+.modal-title {
+  font-weight: bold;
+  color: #004080;
+}
+
+/* Modal Form */
+.assign-form .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.assign-form .form-control {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.assign-form .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-task-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  transition: transform 0.2s;
+}
+
+.submit-task-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .assign-heading {
+    font-size: 22px;
+  }
+
+  .assign-btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .submit-task-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .assign-heading {
+    font-size: 20px;
+  }
+
+  .assign-form .form-control {
+    font-size: 14px;
+  }
+
+  .submit-task-btn {
+    font-size: 14px;
+  }
+}
