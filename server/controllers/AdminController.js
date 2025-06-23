@@ -7,8 +7,12 @@ var nodemailer = require("nodemailer");
 const adminLogin = async (req, res) => {
   const { adminid, password } = req.body;
 
+  // const data = await AdminModel.findOne({name:adminid});
+  // console.log(data);
+  
+
   try {
-    const admin = await AdminModel.findOne({ id: adminid });
+    const admin = await AdminModel.findOne({ name:adminid });
 
     if (!admin) {
       res.status(401).send({ msg: "in valid id" });
@@ -22,6 +26,7 @@ const adminLogin = async (req, res) => {
   } catch (error) {
     console.error(error);
   }
+
 };
 
 const createUser = async (req, res) => {
